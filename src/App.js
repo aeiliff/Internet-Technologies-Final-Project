@@ -1,37 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import SelectImages from './SelectImages.js';
+import Upload from './Upload';
+import SearchUploads from './SearchUploads.js'
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Image Generator</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-           <code>Choose pictures and textures to create a new image</code>
-        </p>
-        <button id ="load-images">Images</button>
-        <button>Textures</button>
-       <a 
-          className="Image-link"
-          href= "image.html"
-          target="_blank"
-          rel="noopener noreferrer">Images
-        </a>
-        <a
-          className="Texture-link"
-          href="textures.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >Textures
-        </a>
-      </header>
+        <h1>Image Finder</h1>
+      </header> 
+      <section className="images">
+        <p>Find and Upload Pictures!</p>
+        <div className="controls">
+          <div>
+            <SelectImages></SelectImages>
+            <Upload></Upload>
+            <SearchUploads></SearchUploads>
+          </div>
+        </div>
+      </section>   
     </div>
-    
   );
-}
-
-function loadData() {
-  console.log("out");
 }
 export default App;
