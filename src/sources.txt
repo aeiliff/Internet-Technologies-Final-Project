@@ -1,6 +1,5 @@
 https://docs.expo.dev/tutorial/image-picker/
-https://www.geeksforgeeks.org/
 
-how-to-upload-image-and-preview-it-using-reactjs/
+https://www.geeksforgeeks.org/how-to-upload-image-and-preview-it-using-reactjs/
 
 https://thewebdev.info/2021/11/14/how-to-fetch-image-from-api-with-react/#google_vignette

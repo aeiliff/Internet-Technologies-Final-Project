@@ -1,23 +1,22 @@
 import './App.css';
-import { baseURL } from './config.js';
-import Images from './Images.js';
-import ScrammbleImage from './Textures';
+import SelectImages from './SelectImages.js';
 import Upload from './Upload';
+import SearchUploads from './SearchUploads.js'
 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Image Generator</h1>
+        <h1>Image Finder</h1>
       </header> 
       <section className="images">
-        <p>Choose pictures and textures to create a new image</p>
+        <p>Find and Upload Pictures!</p>
         <div className="controls">
           <div>
-            <Images></Images>
-            <ScrammbleImage></ScrammbleImage>
+            <SelectImages></SelectImages>
             <Upload></Upload>
+            <SearchUploads></SearchUploads>
           </div>
         </div>
       </section>   
